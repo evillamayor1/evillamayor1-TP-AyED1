@@ -21,9 +21,9 @@ for i in range(10):
     lista_elim.append(random.randint(1, 15))
 
 #imprime las listas antes de la modificacion
-print("la lista original es:"listaA)
-print("la lista de elementos a eliminar es:"lista_elim)
+print(f"la lista original es:{listaA}")
+print(f"la lista de elementos a eliminar es:{lista_elim}")
 
 #llama a la funcion y posteriormente imprime la lista ya modificada
 lista_final = eliminar_lista(listaA, lista_elim)
-print("la lista modificada es:"lista_final)
+print(f"la lista modificada es:{lista_final}")
