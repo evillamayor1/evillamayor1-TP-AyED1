@@ -16,5 +16,5 @@ numero = int(input("ingrese un numero: "))
 resultado = cuadrados_numeros(numero)
 
 #imprime los valores de la lista
-for i in range len(resultado):
+for i in range(len(resultado)):
     print(resultado[i])
