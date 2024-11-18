@@ -69,6 +69,7 @@ def eliminar_socio(ingresos=list) -> list:
     return ingresos_filtrados
 
 #se asignan los valores y se llama a las funciones
+
 ingresos = registrar_ingresos()
 contar_ingresos(ingresos)
 ingresos = eliminar_socio(ingresos)
