@@ -7,7 +7,14 @@ también un programa para ingresar los tres valores, invocar a la función y mos
 el máximo hallado, o un mensaje informativo si éste no existe"""
 
 #crear la funcion recibiendo 3 numeros enteros
-def mayor_abs (n1 = int, n2 = int, n3 = int):
+def mayor_abs (n1 = int, n2 = int, n3 = int) -> int:
+    """
+    Pre: esta funcion recibe 3 numeros enteros
+
+    post: esta funcion retorna un entero
+
+    """
+
     #definir el mayor entre los 3 numeros
     mayor = max(n1, n2, n3)
     #comprobar cuantas veces aparece el numero mayor

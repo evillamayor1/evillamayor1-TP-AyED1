@@ -10,7 +10,13 @@ abona con $5000, el vuelto debe contener 1 billete de $1000, 1 billete de $500, 
 billete de $200, 1 billete de $100 y 3 billetes de $10."""
 
 #definir la funcion
-def calcular_cambio(total_compra = int, total_recibido = int):
+def calcular_cambio(total_compra = int, total_recibido = int) -> int:
+    """
+    Pre: esta funcion recibe dos valores enteros
+
+    post: esta funcion retorna un string junto a valores enteros
+
+    """
     #se definen las denominaciones de los billetes disponibles
     denominaciones = [5000, 1000, 500, 200, 100, 50, 10]
 

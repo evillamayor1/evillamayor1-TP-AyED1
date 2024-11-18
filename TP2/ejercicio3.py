@@ -3,7 +3,12 @@ donde N se ingresa desde el teclado. Luego se solicita imprimir los últimos 10 
 res de la lista. """
 
 #definir variable
-def cuadrados_numeros(n = int):
+def cuadrados_numeros(n = int) -> list:
+    """
+    pre: esta funcion recibe un numero entero
+
+    post: esta funcion retorna una lista
+    """
     #genera una lista con los cuadrados de los numeros
     cuadrados = [i**2 for i in range(1, N + 1)]
 

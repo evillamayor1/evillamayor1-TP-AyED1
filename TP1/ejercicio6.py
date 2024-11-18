@@ -3,7 +3,13 @@ y devuelva como valor de retorno el número que resulte de concatenar ambos
 parámetros. Por ejemplo, si recibe 1234 y 567 debe devolver 1234567. No se per
 mite utilizar facilidades de Python no vistas en clase."""
 
-def concatenar(n1 = int, n2 = int):
+def concatenar(n1 = int, n2 = int) -> int:
+    """
+    Pre: esta funcion recibe unicamente dos valores enteros
+
+    post: esta funcion retorna un entero
+
+    """
     #se transforman los enteros en str para concatenarlos
     str_n1 = str(n1) 
     str_n2 = str(n2)

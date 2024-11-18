@@ -4,7 +4,13 @@ tenerse en cuenta la cantidad de días de cada mes, incluyendo los años bisiest
 Devolver True o False según la fecha sea correcta o no. Realizar también un 
 programa para verificar el comportamiento de la función."""
 #se define la variable
-def verificar_fecha(dia = int, mes = int, anio = int):
+def verificar_fecha(dia = int, mes = int, anio = int) -> bool:
+    """
+    Pre: esta funcion recibe 3 numeros enteros
+
+    post: esta funcion retorna un valor booleano
+
+    """
     #se crea una lista de la cantidad de dias en el mes cuando no es viciesto
     cantidad_dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 

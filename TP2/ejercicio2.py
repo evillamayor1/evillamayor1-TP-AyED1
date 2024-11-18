@@ -9,13 +9,13 @@ Combinar estas tres funciones en un mismo programa"""
 import random
 
 #definir funcion 
-def generar_lista(n = int):
+def generar_lista(n = int)-> list:
     #genera una lista por comprension con la longitud deseada
     lista = [random.randint(1, 100) for i in range(n)]
     return lista
 
 #definir funcion
-def elemento_repetido(lista = list):
+def elemento_repetido(lista = list)-> bool:
     #itera sobre la lista buscando elementos repetidos, retorna true si encuentra alguno
     for i in range(len(lista)):
         for j in range(i + 1, len(lista)):
@@ -24,7 +24,7 @@ def elemento_repetido(lista = list):
     return False
 
 #definir variable 
-def elementos_unicos(lista = list):
+def elementos_unicos(lista = list)-> list:
     #crea una lista de elementos unicos y comprueba si estos existen en la lista
     unicos = []
     for elemento in lista:

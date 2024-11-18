@@ -6,7 +6,13 @@ ni agregados, desarrollar programas que permitan:
  b. Calcular la cantidad de días existentes entre dos fechas cualesquiera."""
 
  #se define la funcion 
- def dia_sig(dia = int, mes = int, anio = int):
+def dia_sig(dia = int, mes = int, anio = int) -> int:
+    """
+    Pre: esta funcion recibe 3 valores enteros
+
+    post: esta funcion retorna 3 valores enteros
+
+    """
     #se agrega un dia
     dia +=1
 

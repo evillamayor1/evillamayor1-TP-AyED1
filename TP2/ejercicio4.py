@@ -5,7 +5,13 @@ resultante. La función debe modificar la lista original sin crear una copia mod
 #importo random para generar una lista aleatoria para que sea mas facul de hacer
 import random
 
-def eliminar_lista(lista = list, lista_eliminar = list):
+def eliminar_lista(lista = list, lista_eliminar = list) -> list:
+    """
+    pre: esta funcion recibe dos listas
+
+    post: esta funcion retorna una sola lista
+
+    """
     #usando listas por comprension elimina los elementos de la lista de elementos a eliminar
     lista[:] = [i for i in lista if valor not in lista_eliminar]
     return lista

@@ -14,7 +14,7 @@ auxiliares. Un ejemplo de lista capicúa es [50, 17, 91, 17, 50]"""
 import random 
 
 #definir funcion
-def listaA():
+def listaA()-> list:
     #se genera la longitud y una lista vacia
     longitud = random.randint(10, 20)
     lista = []
@@ -29,7 +29,7 @@ lista = listaA()
 print(lista)
 
 #definir funcion
-def total_lista(lista= list):
+def total_lista(lista= list)-> int:
     #crear una variable contador y sumar los elementos con una iteracion
     total = 0
     for i in range(len(lista)):

@@ -16,7 +16,12 @@ caso contrario el camión no serán despachado por su alto costo."""
 import random
 
 #definir la función
-def clasificar_naranjas(cantidad_naranjas):
+def clasificar_naranjas(cantidad_naranjas = int) -> int:
+    """
+    pre:esta variable recibe un numero entero
+
+    post: esta variable retorna valores enteros
+    """
     #peso promedio por caja en kg (cada caja tiene 100 naranjas y cada naranja tiene un peso promedio de 500g)
     peso_caja = 100 * (500 / 2 / 1000) 
 

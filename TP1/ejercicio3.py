@@ -9,6 +9,12 @@ grama para verificar el comportamiento de la función"""
 
 #se define la variable
 def tarifa(viajes):
+    """
+    Pre: esta funcion recibe un unico valor entero
+
+    post: esta funcion retorna un valor entero
+
+    """
     total = 0
     tarifa_base = 650
     
